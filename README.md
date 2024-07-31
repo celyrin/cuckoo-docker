@@ -77,7 +77,5 @@ docker run -d --name cuckoo -v $(realpath ./vbox.sock):/opt/vbox/vbox.sock cucko
   sudo iptables -A FORWARD -i vboxnet0 -o docker0 -j ACCEPT
   ```
 
-Replace `eth0` with the appropriate interface as necessary.
-
 ## Support
 For any issues or contributions, please open an issue or a pull request on the project's GitHub repository.
