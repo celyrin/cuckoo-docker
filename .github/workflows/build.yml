@@ -39,6 +39,10 @@ jobs:
       with:
         tag_name: ${{ github.ref }}
         release_name: Release ${{ github.ref }}
+        body: |  # Updated release description here
+          This release contains the following files:
+          - `image.tar`: Docker image of the latest build. Use `docker load -i image.tar` to load this image into your Docker environment.
+          - `bin.tar.gz`: Archive of the binaries.
         draft: false
         prerelease: false
 
